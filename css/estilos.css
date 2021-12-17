@@ -1,0 +1,458 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+a{
+	color: #01283b;
+	width: 100%;
+	height: 100%;
+}
+a:link, a:visited {
+	text-decoration: none;
+	font-size: large;
+	font-family: sans-serif;
+}
+a:hover {
+	color: #00AEFF;
+}
+img{
+	display: flex;
+	text-align: center
+}
+h1{
+	font-family: sans-serif;
+}
+p{
+	font-family: arial;
+}
+h5{
+	font-family: arial;
+}
+section{
+	width: 100%;
+	height: 600px;
+}
+nav{
+	position: fixed;
+	width: 100%;
+}
+nav ul{
+	list-style: none;
+	background: rgba(0,0,0,0);
+	overflow: hidden;
+	color: white;
+	padding: 0;
+	text-align: right;
+	margin: 0;
+	transition: 1s;
+}
+nav.white ul{
+	background: white;
+}
+nav ul li{
+	display: inline-block;
+	padding: 20px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: black;
+	font-size: 10px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+header{
+	width: 100%;
+	height: 1px;
+	background-color: white;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#parallax {
+  background-image: url(../imagens/crianca.png);
+
+  width: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#parallax2 {
+  background-image: url(../imagens/terra.png);
+
+  width: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#parallax3 {
+  background-image: url(../imagens/familiacorona.png);
+
+  width: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#parallax4 {
+  background-image: url(../imagens/escola_vazia.png);
+
+  width: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#parallax5 {
+  background-image: url(../imagens/morte_covid.png);
+
+  width: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#parallax6 {
+  background-image: url(../imagens/choro.jpg);
+
+  width: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#parallax7 {
+  background-image: url(../imagens/caixao.png);
+
+  width: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#parallax8 {
+  background-image: url(../imagens/vacina1.jpg);
+
+  width: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#parallax9 {
+  background-image: url(../imagens/vacina2.jpg);
+
+  width: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#parallax10 {
+  background-image: url(../imagens/vacina3.jpg);
+
+  width: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#card1{
+	position: relative;
+	width: 300px;
+	height: 400px;
+	border-radius: 40px;
+	box-shadow: inset 5px 5px 15px rgba(0,0,0,0.15);
+	inset -5px -5px 15px rgba(0,0,0,0.15)
+}
+#card1::before{
+	content: '';
+	position: absolute;
+	inset:5px;
+	background-image: url(../imagens/foto_evelyn.png);
+	border-radius: 35px;
+	transition: 0.5s;
+}
+#card1:hover::before, #card2:hover::before{
+	transform: translate(40px,-40px);
+	box-shadow: -30px 30px 50px rgba(0,0,0,0.5)
+}
+.imagemmenu{
+	width: 60px;
+}
+.classe2{
+	float: right;
+	width: 55%;
+	color: #FF4C00;
+}
+.classe3{
+	float: left;
+	width: 45%
+}
+.classe3 img{
+	width: 100%;
+}
+.linha{
+	height: 5px;
+	float: right;
+	width: 55%;
+	background-color: #FF4C00;
+	margin-top: 10px;
+}
+.classe4{
+	color: #01283b;
+	float: right;
+	width: 52%;
+	padding-left: 5px;
+	padding-right: 10px;
+}
+.rodape{
+	clear: both;
+	text-align: center;
+	background-color: #FF4C00;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px
+}
+.classe5{
+	float: right;
+	padding-top: 50px;
+	width: 50%;
+	padding-bottom: 50px
+}
+.classe5 a{
+	font-size: xx-large;
+}
+.testebeninas{
+	width: 100%;
+	height: 100vh;
+	padding-top: 20vh;	
+	box-sizing: border-box;
+}
+.testebeninas::before{
+	content: "";
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-image: url(../imagens/foto_canto.png);
+	position: absolute;
+	z-index: -1;
+}
+.teste2omg{
+	width: 100%;
+	height: 100vh;
+	padding-top: 20vh;	
+	background-image: url(../imagens/teste3.jpg);
+}
+.testebeninas{
+	margin: 0 auto;
+	padding: 50px;
+	width: 50%;
+	background-color: #010101
+}
+
+.texto{
+	float: left;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	min-height: 100vh;
+	margin-left: 150px;
+	margin-top: 50px
+}
+.btn{
+	border: 1px solid #3498db;
+	background: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	margin: 10px;
+	transition: 0.8s;
+	position: relative;
+	overflow: hidden;
+	border-radius: 30px
+}
+.btn::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	background: #FF4C00;
+	z-index: -1;
+	transition: 0.8s;
+	top: 0;
+	border-radius: 0 0 50% 50%;
+}
+.btn:hover::before{
+	height: 200%;
+}
+.btn a:hover{
+	color: #01283b
+}
+.logo{
+	position: fixed;
+	float: left;
+	width: 10%;
+	margin: 16px 36px;
+}
+.logo img{
+	width: 100%
+}
+.content{
+	width: 100%;
+	font-size: 20px;
+	margin-top: 60px;
+	text-align: justify;
+}
+.texto1{
+	z-index: 2;
+	text-align: justify;
+}
+.informacao{
+	color:white;
+	width: 50%;
+	margin-top: 150px;
+	margin-left: 300px;
+}
+.social-menu{
+	justify-content: center;
+	float: right;
+	margin-right: 145px;
+	width: 50%;
+	font-size: large;
+	margin-top: 50px
+}
+.social-menu ul{
+	float: right;
+	transform: translate(-50%, -50%);
+	display: flex;
+}
+.social-menu ul li{
+	list-style: none;
+	margin: 0 15px;
+}
+.social-menu ul li .fa{
+	font-size: 30px;
+	line-height: 60px;
+	transition: .6s;
+	color: #01283b;
+}
+.social-menu ul li a{
+	position: relative;
+	display: block;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #fff;
+	text-align: center;
+	transition: .6s;
+	box-shadow: 0 5px 4px rgba(0,0,0,.5)
+}
+.social-menu ul li a:hover{
+	transform: translate(0,-10px);
+}
+.social-menu ul li .fa:hover{
+	color: #fff;
+}
+.social-menu ul li:nth-child(1) a:hover{
+	background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover{
+	background-color: #e4405f;
+}
+.social-menu ul li:nth-child(3) a:hover{
+	background-color: #0A66C2;
+}
+.social-menu ul li:nth-child(4) a:hover{
+	background-color: #333;
+}
+.social-menu ul li:nth-child a:hover{
+	background-color: #3b5999;
+}
+.nome{
+	transition: -50%, -50%;
+	float: right;
+	font-size: xx-large;
+	font-family: sans-serif;
+	color: #01283b;
+	margin-top: 250px;
+	margin-right: 200px;
+	background-color: white;
+	border-radius: 30px;
+	padding: 20px;
+	box-shadow: 0 5px 4px rgba(0,0,0,.5);
+	transition: .6s;
+}
+.nome:hover{
+	transform: translate(0, -10px);
+	transition: .6s;
+}
+.wrapper2{
+	display: inline-flex;
+	margin-left: 100px;
+}
+.wrapper2 .static-txt{
+	font-size: 40px;
+	color: #01283b;
+	font-weight: 500;
+}
+.wrapper2 .dynamic-txts{
+	margin-left: 10px;
+	line-height: 50px;
+	height: 48px;
+	overflow: hidden;
+}
+.dynamic-txts li{
+	font-family: arial;
+	list-style: none;
+	font-size: 40px;
+	font-weight: 500;
+	color: #FF4C00;
+	position: relative;
+	top: 0;
+	animation: slide 4.5s steps(3) infinite;
+}
+@keyframes slide{
+	100%{
+		top: -150px;
+	}
+}
+.linha3{
+	height: 60px;
+}
+.dynamic-txts li span{
+	position: relative;
+}
+.dynamic-txts li span::after{
+	content: "";
+	left: 0;
+	position: absolute;
+	height: 100%;
+	background: #ffd9a1;
+	width: 100%;
+	border-left: 2px solid blue;
+	animation: typing 1.5s steps(10) infinite;
+}
+@keyframes typing{
+	100%{
+		left: 100%;
+		margin: 0 -35px 0 35px
+	}
+}
+.colora{
+	color: white;
+}
+.right{
+	float: right;
+}
